@@ -1,0 +1,91 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(texto) {
+        document.write(texto);
+        pulaLinha();
+    }
+
+    let numeroPensado = Math.round(Math.random() * 10);
+    let chute = parseInt(prompt("Digite seu chute!"));
+
+    if(chute == numeroPensado) {
+        mostra("Você acertou!")
+    } else {
+        mostra("Você errou, o número pensando foi " + numeroPensado);
+    }
+
+    /* if(chute != numeroPensado) { //Diferente
+        mostra("Você errou, o número pensando foi " + numeroPensado);
+    } */
+
+</script>
+
+<!-- -------------------------------------------------------------------
+
+function calculaImc (peso, altura) {
+    return peso / (altura * altura);
+        - O que retorna da função/ Devolve o resultado.
+}
+
+let nome = prompt("Informe seu nome");
+let alturaInformada = prompt(nome + ", informe sua altura");
+let pesoInformado = prompt(nome + ", informe seu peso");
+
+let imc = calculaImc(pesoInformado, alturaInformada);
+
+mostra(nome + ", o seu IMC calculado é " + imc)
+    
+if(imc < 18.5) {
+    mostra("Você está abaixo do recomendado.");
+}
+
+if(imc > 35) {
+    mostra("Você está acima do recomendado.");
+}
+
+if(imc >= 18.5 && imc <= 35) { // && - E, and.
+    mostra("Seu IMC está excelente!");
+}
+
+------------------------------------------------------------------------
+
+let imcFlavio = calculaImc(73, 1.71); - Guardando o resultado desse calculaImc dentro da variavel imcFlavio.
+
+let imcAmigo = calculaImc(68, 1.72);
+const totalImc = imcFlavio + imcAmigo;
+
+mostra("A soma dos imc's é " + totalImc);
+
+------------------------------------------------------------------------
+
+let ano = 2019;
+
+mostra("Flávio nasceu em " + (2016 - 52));
+mostra("Joaquim nasceu em " + (2016 - 20));
+mostra("Barney nasceu em " + (2016 - 40));
+
+ano = 2022;
+
+mostra("Flávio nasceu em " + (2016 - 52));
+
+------------------------------------------------------------------------
+
+const idadeFlavio = 45;
+const idadeJoaquim = 23;
+const idadeBarney = 54;
+
+let media = (idadeFlavio + idadeJoaquim + idadeBarney) / 3;
+
+document.write('A média das idades é ' + Math.round(media) + "<br>");
+
+let nome = "Flávio";
+
+document.write("A idade de " + nome + " é " + idadeFlavio);
+
+-------------------------------------------------------------------- -->
