@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+
+    var segredo = Math.round(Math.random() * 10);
+
+    var input = document.querySelector("input");
+    input.focus();
+
+    function verifica() {
+        
+        if (input.value == segredo) {
+
+            alert("Você ACERTOU!");
+        } else {
+            alert("Você ERROU!!");
+        }
+
+        input.value = ""; //Limpar o campo depois de "enviar".
+        input.focus(); //Deixar a caixa já "clicada".
+    }
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifica; //O navegador é quem bota os parenteses quando clicar.
+
+</script>
